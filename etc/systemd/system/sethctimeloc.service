@@ -1,0 +1,11 @@
+[Unit]
+Description=Set Hand Controller Time and Location
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/touch /tmp/setting
+ExecStart=/usr/local/lib/astro/sethctimeloc.sh
+ExecStart=/bin/rm /tmp/setting
+ExecStop=/usr/bin/killall sethctimeloc.sh
+
+[Install]

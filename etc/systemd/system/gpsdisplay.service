@@ -1,0 +1,11 @@
+[Unit]
+Description=Continuously displays GPS data on the OLED display.
+After=basic.target
+
+[Service]
+RemainAfterExit=yes
+ExecStart=/usr/local/lib/astro/gpsdisplay.sh
+
+[Install]
+WantedBy=multi-user.target
+
