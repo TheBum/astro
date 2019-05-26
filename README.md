@@ -30,7 +30,7 @@ After setting up the wifi in the Pi (editing the wpa_supplicant.conf file), soft
 	`sudo cp usr /`  
 3. Follow the instructions in the [base project][proj-url] to update the Pi's OS and install/configure the ser2net and gpsd services. The
 autohotspot service will be installed by the action in step 2, but if you need to make changes to the network name or WPA passphrase for the hotspot, do it now.
-4. Enable the services that were installed in step 2:  
+4. Enable the services that were installed in step 2. The sethctimeloc enable will complain of a lack of an installation config: just ignore it because installation is done when the USB cable is plugged in.  
 
 	`sudo systemctl enable autohotspot`  
 	`sudo systemctl enable forcetimeupdate`  
