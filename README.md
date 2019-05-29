@@ -20,6 +20,8 @@ The included case files assume you're using the following components:
 
 The diagram below shows how I wired up the Pi, OLED, and GPS. I used two 4-position single row female connectors (denoted by the green and red boxes; note that one position in the OLED connector is empty) and wired both modules' Vcc into pin 1 on the Pi using a single terminal and heat shrink tubing (denoted by the cyan box; the terminal was too full to fit in a 1-position housing). I used a header only long enough for the number of GPIB rows affected (six), which allows the header and connectors to fit into the open area designed into the case and the rest of the Pi to lie flat against the posts.
 ![Wiring diagram](./Module-wiring-diagram.png)
+The power from the voltage converter is fed into the solder pads on the bottom of the Pi, under the USB power connector, to take advantage of the fuses in the USB power feed.
+![Wiring diagram back](./Module-wiring-diagram-back.png)
 
 # Software Installation
 
