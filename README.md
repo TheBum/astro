@@ -10,7 +10,7 @@ This has been tested with a Celestron Advanced VX equatorial mount with its regu
 
 The included case files assume you're using the following components:  
   
-* Raspberry Pi Zero W with a 2x7 header soldered to the top GPIO pads on the front of the board  
+* Raspberry Pi Zero W with a 2x6 header soldered to the top GPIO pads on the front of the board  
 * SSD1306 128x32 pixel I2C OLED display (e.g. [this Maker Focus display][oled-url]) with a header soldered on so that the pins are on the back of the board  
 * 12V-to-5V converter (e.g. [Pololu D24V10F5][conv-url]) attached to empty GPIO pads at the bottom of the front of the board with double-sided tape  
 * Single-board GPS module (e.g. [Gowoops GPS-NEO-6M-001][gps-url] or similar form factor) with a header soldered on so that the pins are on the chip side (not the antenna side)
