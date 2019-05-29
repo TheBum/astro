@@ -18,6 +18,9 @@ The included case files assume you're using the following components:
 * Wire and header plugs to electrically connect the components; a 2-pin connector for the power coming from the keystone jack is recommended for ease of assembly
 * A case; 3D model files are provided in the [case][case-dir] folder in Fusion 360, STEP, and STL formats for design tweaks and 3D printing
 
+The diagram below shows how I wired up the Pi, OLED, and GPS. I used two 4-position single row female connectors (denoted by the green and red boxes; note that one position in the OLED connector is empty) and wired both modules' Vcc into pin 1 on the Pi using a single terminal and heat shrink tubing (denoted by the cyan box; the terminal was too full to fit in a 1-position housing). I used a header only long enough for the number of GPIB rows affected (six), which allows the header and connectors to fit into the open area designed into the case and the rest of the Pi to lie flat against the posts.
+![Wiring diagram](./Module-wiring-diagram.png)
+
 # Software Installation
 
 After setting up the wifi in the Pi (editing the wpa_supplicant.conf file), software installation is simple:
